@@ -1,0 +1,33 @@
+.sideNav ul {
+    list-style: none;
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    padding-left: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.opened{
+     transform: translateX(0);
+}
+
+.closed{
+     transform: translateX(-75px);
+}
+
+.toggle {
+    position: absolute;
+    left: 60px;
+    top: 46.5%;
+    font-size: 1.3rem;
+    transition: left 0.3s ease-in-out;
+}
+
+.click{
+    left: 10px;
+}
+
+.sideNav ul li {
+    margin-bottom: 30px;
+}

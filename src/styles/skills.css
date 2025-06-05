@@ -1,0 +1,12 @@
+.skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  padding: 20px;
+}
+
+.skills > * {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  font-size: 3rem;
+}

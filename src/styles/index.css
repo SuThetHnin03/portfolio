@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    padding:5px 15px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    /* font-family: "Afacad", sans-serif; */
+    /* font-family: "Sansation", sans-serif; */
+    font-family: "Raleway", sans-serif;
+}
+
+.pages{
+    height: 83vh;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 25px;
+    transition: transform 0.3s ease-in;
+}
+
+.moved{
+    transform: translateX(-35px);
+}

@@ -1,0 +1,61 @@
+.home {
+    position: relative;
+
+}
+
+.home .image {
+    float: left;
+    /* width: 200px; */
+    /* height: 300px; */
+    margin: 0 20px 10px 0;
+    object-fit: cover;
+    width: max-content;
+    /* margin-bottom: 15px; */
+    position: relative;
+    z-index: 1;
+}
+
+.home .image .pf {
+    width: 350px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.home .others {
+    display: flex;
+}
+
+.home .socials {
+    width: 100%;
+    height: 65px;
+    margin-left: 50px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 7px;
+    padding-left: 25px;
+}
+
+.home .image .shecodes {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    border: 10px solid black;
+    bottom: 25px;
+    left: -5px;
+}
+
+.home .texts {
+    clip-path: path();
+    position: relative;
+    font-size: 1.2rem;
+    line-height:2.8rem;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    border-radius: 50px;
+}
