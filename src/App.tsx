@@ -1,7 +1,7 @@
 import HomePage from './pages/HomePage'
 import Header from './components/Header'
 import SideNav from './components/SideNav'
-import { Routes, Route, Outlet, useLocation } from 'react-router-dom'
+import { Routes, Route, Outlet, useLocation } from 'react-router'
 import { useState } from 'react'
 
 import SkillsPage from './pages/SkillsPage'
