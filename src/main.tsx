@@ -14,7 +14,7 @@ import ResourcesPage from './pages/ResourcesPage.tsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: 'portfolio/',
     element: <App />,
     // errorElement: <div>404 Not Found</div>
     errorElement: <NotFound />,
