@@ -14,48 +14,44 @@ import ResourcesPage from './pages/ResourcesPage.tsx'
 
 const router = createBrowserRouter([
   {
-    path: 'portfolio/',
+    path: '',
     element: <App />,
     // errorElement: <div>404 Not Found</div>
     errorElement: <NotFound />,
     children:
       [
         {
-          path: '/skills',
+          path: 'skills',
           element: <SkillsPage />,
           errorElement: <NotFound />
         },
 
         {
-          path: '/projects',
+          path: 'projects',
           element: <ProjectsPage />,
           children: [
             {
-              path: '/projects/:projectId',
+              path: 'projects/:projectId',
               element: <ProjectPage />,
             }
           ]
         },
 
         {
-          path: '/contact',
+          path: 'contact',
           element: <ContactPage />,
           // errorElement: <div>404 Not Found</div>
           errorElement: <NotFound />
         },
 
         {
-          path: '/resources',
+          path: 'resources',
           element: <ResourcesPage />,
           // errorElement: <div>404 Not Found</div>
           errorElement: <NotFound />
         },
       ]
   }
-
-
-
-
 ]);
 
 createRoot(document.getElementById('root')!).render(
