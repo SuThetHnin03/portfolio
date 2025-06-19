@@ -18,7 +18,7 @@ const RadarChart = ({ data, width, height, axisConfig }: Props) => {
 
   const radarLine = d3
     .lineRadial<number>()
-    .radius((i) => {
+    .radius((_d, i) => {
       const axis = axisConfig[i];
       const value = data[axis.name] ?? 0;
       return (value / axis.max) * radius;
