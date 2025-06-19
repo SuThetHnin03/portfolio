@@ -8,9 +8,9 @@ const Header = () => {
     <div className='header'>
       <h1>Su Thet Hnin</h1>
       <div className="social">
-        <IoLogoInstagram  className="icon"/>
-        <FiGithub  className="icon"/>
-        <SlSocialLinkedin  className="icon"/>
+        <a href="https://www.instagram.com/su_thet_hnin13/" target="_blank"><IoLogoInstagram  className="icon"/></a>
+        <a href="https://github.com/Zahra13s" target="_blank"><FiGithub  className="icon"/></a>
+        <a href="https://www.linkedin.com/in/su-thet-hnin-94a12331a/" target="_blank"><SlSocialLinkedin  className="icon"/></a>
       </div>
     </div>
   )

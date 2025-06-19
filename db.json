@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Weather App",
+      "description": "A responsive weather application that displays real-time forecasts using an external weather API. Built with React.",
+      "image": "/weather.png",
+      "tech": ["HTML", "API", "CSS"],
+      "preview": "https://zahra-weatherapp.netlify.app/"
+    },
+    {
+      "id": 2,
+      "title": "To-Do App",
+      "description": "A clean and interactive To-Do list application with full CRUD functionality using React.",
+      "image": "/todo.png",
+      "tech": ["React"],
+      "preview": "https://zahra-todo-react-js.netlify.app/"
+    },
+    {
+      "id": 3,
+      "title": "World Clock App",
+      "description": "A world clock app showing the current time in multiple cities, built using JavaScript and real-time API integration.",
+      "image": "/worldClock.png",
+      "tech": ["HTML", "API", "CSS", "JS"],
+      "preview": "https://worldclockbysu.netlify.app/"
+    },
+    {
+      "id": 4,
+      "title": "Binge Worthy TV Show",
+      "description": "A TV show tracker that allows users to explore and manage a list of binge-worthy shows. Basic CRUD features included.",
+      "image": "/tvshow.png",
+      "tech": ["HTML", "CSS", "JS"],
+      "preview": "https://binge-worthy-tv-show.netlify.app/"
+    },
+    {
+      "id": 5,
+      "title": "Guess A Number",
+      "description": "A fun number guessing game where users try to guess the correct number within a given range.",
+      "image": "/guessANum.png",
+      "tech": ["HTML", "CSS", "JS"],
+      "preview": "https://guessanumberbyzahra.netlify.app/"
+    },
+    {
+      "id": 6,
+      "title": "Rock Paper Scissor",
+      "description": "An interactive Rock, Paper, Scissors game built with vanilla JavaScript and styled with CSS.",
+      "image": "/rps.png",
+      "tech": ["HTML", "CSS", "JS"],
+      "preview": "https://rockpaperscissorbysu.netlify.app/"
+    }
+  ]
+}

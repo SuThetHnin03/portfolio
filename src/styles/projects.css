@@ -1,0 +1,98 @@
+.projects {
+    margin-top: 25px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.projects > * {
+    color: white;
+    text-decoration: none;
+}
+
+.projects .icon{
+    font-size: 3rem;
+}
+
+.eachProject{
+    /* background-color: rgb(35, 35, 35); */
+    background-image: linear-gradient(to right top, rgba(51, 51, 51, 0.3), rgba(66, 66, 66, 0.3), rgba(81, 81, 81, 0.3), rgba(97, 97, 97, 0.3), rgba(114, 114, 114, 0.3));
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.eachProject:hover{
+    /* background-color: rgb(35, 35, 35); */
+    background-image: linear-gradient(to right top, rgba(51, 51, 51, 1), rgba(66, 66, 66, 1), rgba(81, 81, 81, 1), rgba(97, 97, 97, 1), rgba(114, 114, 114, 1));
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.pj{
+    margin-left: 25px;
+}
+
+.pj .title{
+    display: flex;
+    align-items: center;
+      margin-bottom: 15px;
+}
+
+.pj .icon{
+    font-size: 1.5rem;
+    margin-right: 50px;
+}
+
+.title{
+    margin-left: 50px;
+}
+
+.project{
+    display: grid;
+    grid-template-columns:1fr 500px;
+    gap: 50px;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 25px;
+    border: 10px solid rgb(196, 195, 195);
+}
+
+.project h2{
+    margin-top: 30px;
+}
+
+.project p,
+.project ul,
+.project a{
+    margin-left: 15px;
+    
+}
+
+.projects ul,
+.project ul{
+    padding: 0;
+    list-style: none;
+    display: grid;
+}
+
+.projects ul{
+        grid-template-columns: repeat(6, 1fr);
+}
+
+.project ul{
+    padding-left: 15px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.project a{
+    color: white;
+    text-decoration: none;
+}
+
+.projects .tech,
+.project .tech{
+    font-size: 2rem;
+}

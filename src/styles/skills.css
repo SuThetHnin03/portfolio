@@ -1,12 +1,32 @@
 .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills .graph {
+  flex: 1;
+  position: relative;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  flex: 2;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 50px;
+  gap: 25px;
   padding: 20px;
 }
 
-.skills > * {
-  aspect-ratio: 1 / 1;
-  width: 100%;
+.skill>* {
+  border-radius: 15px;
+  padding: 25px;
   font-size: 3rem;
+  box-shadow: inset 3px 5px 5px #60606080, inset -3px -5px 5px #59595970;
+}
+
+.skill>*:hover {
+  border: 1px solid white;
 }

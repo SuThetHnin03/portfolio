@@ -10,15 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-spring/web": "^10.0.1",
     "antd": "^5.25.4",
+    "d3": "^7.9.0",
     "feather-icons": "^4.29.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
-    "react-router": "^7.6.1"
+    "react-router": "^7.6.1",
+    "tailwind": "^4.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@types/d3": "^7.4.3",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
