@@ -22,27 +22,29 @@ const ProjectPage = () => {
   const [currentProject, setCurrentProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/projects")
+    fetch("https://raw.githubusercontent.com/suthethnin03/MyProject/main/db.json")
       .then(res => res.json())
-      .then((data: Project[]) => {
-        const found = data.find(p =>
+      .then((data) => {
+        const projectArray: Project[] = data.projects || [];
+        const found = projectArray.find(p =>
           p.title.toLowerCase() === project?.toLowerCase()
         );
         setCurrentProject(found || null);
-      });
+      })
+      .catch((err) => console.error("Error fetching project data:", err));
   }, [project]);
 
   const techIcons: { [key: string]: JSX.Element } = {
-    HTML: <FaHtml5/>,
-    CSS: <FaCss3Alt/>,
-    JS: <FaJsSquare/>,
-    BOOTSTRAP: <FaBootstrap/>,
-    TS: <BiLogoTypescript/>,
-    REACT: <FaReact/>,
-    PHP: <SiPhp/>,
-    LARAVEL: <FaLaravel/>,
-    SQL: <DiMysql/>,
-    API: <AiFillApi/>,
+    HTML: <FaHtml5 />,
+    CSS: <FaCss3Alt />,
+    JS: <FaJsSquare />,
+    BOOTSTRAP: <FaBootstrap />,
+    TS: <BiLogoTypescript />,
+    REACT: <FaReact />,
+    PHP: <SiPhp />,
+    LARAVEL: <FaLaravel />,
+    SQL: <DiMysql />,
+    API: <AiFillApi />,
     JSON: <VscJson />
   };
 
@@ -67,13 +69,14 @@ const ProjectPage = () => {
           <h2>Languages</h2>
           <ul>
             {currentProject.tech?.map((t, i) => {
-            const key = t.toUpperCase();
-              return(
+              const key = t.toUpperCase();
+              return (
                 <li key={i} className='tech'>
                   {techIcons[key] || <span className="text-xs">{t}</span>}
                 </li>
-              )}
-          )}
+              )
+            }
+            )}
           </ul>
           <h2>Preview</h2>
           <a href={currentProject.preview} target='_blank'>{currentProject.preview}</a>

@@ -20,10 +20,10 @@ const ProjectsPage = () => {
 
 
   const [projects, setProjects] = useState<Project[]>([])
-  useEffect(() => {
-    fetch("http://localhost:3000/projects")
+useEffect(() => {
+    fetch("https://raw.githubusercontent.com/suthethnin03/MyProject/main/db.json")
       .then(res => res.json())
-      .then(data => setProjects(data))
+      .then(data => setProjects(data.projects || []))
   }, [])
 
   const techIcons: { [key: string]: JSX.Element } = {
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
       <h1 className="title">My Projects</h1>
       <div className='projects'>
         {
-          projects.map((project) => (
+          Array.isArray(projects) && projects.map((project) => (
             <Link
             className="eachProject"
               key={project.id}
